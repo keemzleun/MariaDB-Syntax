@@ -46,6 +46,8 @@ ALTER TABLE post CHANGE content contents VARCHAR(255);
 
 -- 테이블 컬럼 타입과 제약조건 변경
 ALTER TABLE author MODIFY COLUMN email VARCHAR(255) NOT NULL;
+ALTER TABLE author MODIFY COLUMN profile_image longblob;
+
 
 -- 테이블 삭제
 DROP TABLE 테이블명;
