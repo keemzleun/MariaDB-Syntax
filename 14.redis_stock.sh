@@ -7,6 +7,7 @@ for i in {1..200}; do
         echo "재고가 부족합니다. 현재 재고: $quantity"
         break;
     fi
+    
     # 재고 감소
     redis-cli -h localhost -p 6379 decr apple:1:quantity
     echo "현재 재고 : $quantity"
