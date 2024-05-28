@@ -162,3 +162,20 @@ zrevrange recent:products 0 2
 # apple (값이 높은 마지막 apple만 살아 남음)
 # orange
 # banana
+
+
+# hashes
+# 해당 자료구조에서는 문자, 숫자가 구분
+hset key------ value---------------------------
+               key- value-
+hset product:1 name "apple" price 1000 stock 50
+hget product:1 price
+# 모든 객체값 get
+hgetall product:1
+# 특정 요소값 수정
+hset product:1 stock 40
+
+# 특정 요소의 값을 증가/감소
+hincrby product:1 stock 5  # 5 증가
+hincrby product:1 stock -10  # 10 감소
+
