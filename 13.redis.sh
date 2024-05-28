@@ -178,4 +178,3 @@ hset product:1 stock 40
 # 특정 요소의 값을 증가/감소
 hincrby product:1 stock 5  # 5 증가
 hincrby product:1 stock -10  # 10 감소
-
